@@ -443,6 +443,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 .project-card:nth-child(even) .project-card__type { color: var(--sage-light); }
 
 .project-videos { margin-top: 26px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.project-videos--single { grid-template-columns: minmax(0, 260px); justify-content: center; }
 .project-piece { display: flex; flex-direction: column; gap: 8px; }
 .project-piece video,
 .project-piece-img {
@@ -516,6 +517,10 @@ button { font: inherit; background: none; border: none; cursor: pointer; }
 .l3::after {
   content: ''; position: absolute; top: 24px; left: 24px; width: 34px; height: 34px; border-radius: 50%;
   background: linear-gradient(145deg, var(--terracotta), var(--sage-dim)); opacity: 0.9;
+}
+.about__logo {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 62%; height: auto;
 }
 
 /* ---------- CTA final ---------- */
@@ -650,6 +655,9 @@ html.lightbox-open { overflow: hidden; }
   .lightbox__close { top: 14px; right: 14px; width: 40px; height: 40px; }
   .lightbox__nav { width: 40px; height: 40px; }
   .lightbox__nav--prev { left: 8px; }
+  .lightbox__nav--next { right: 8px; }
+  .lightbox__count { bottom: 14px; font-size: 0.74rem; }
+}
   .lightbox__nav--next { right: 8px; }
   .lightbox__count { bottom: 14px; font-size: 0.74rem; }
 }
